@@ -1,19 +1,22 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
+    GameController gameController;
 
     private bool isGrounded;
-    public bool canMove = true;
+    private bool canMove = true;
 
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        gameController = FindObjectOfType<GameController>();
     }
 
     private void Update()
@@ -30,26 +33,26 @@ public class PlayerMove : MonoBehaviour
             {
                 rigid.linearVelocity = new Vector2(rigid.linearVelocityX, 7f);
             }
-        }
 
-        // 플레이어의 방향전환
-        if (Input.GetAxisRaw("Horizontal") == 1)
-        {
-            spriteRenderer.flipX = false;
-        }
-        else if (Input.GetAxisRaw("Horizontal") == -1)
-        {
-            spriteRenderer.flipX = true;
-        }
-        
-        // 플레이어의 좌우 애니메이션
-        if (Input.GetButton("Horizontal"))
-        {
-            anim.SetBool("isRunning", true);
-        }
-        else
-        {
-            anim.SetBool("isRunning", false);
+            // 플레이어의 방향전환
+            if (Input.GetAxisRaw("Horizontal") == 1)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else if (Input.GetAxisRaw("Horizontal") == -1)
+            {
+                spriteRenderer.flipX = true;
+            }
+
+            // 플레이어의 좌우 애니메이션
+            if (Input.GetButton("Horizontal"))
+            {
+                anim.SetBool("isRunning", true);
+            }
+            else
+            {
+                anim.SetBool("isRunning", false);
+            }
         }
     }
 
@@ -69,6 +72,27 @@ public class PlayerMove : MonoBehaviour
             isGrounded = false;
             anim.SetBool("isJumping", true);
         }
+    }
+
+    public void TakeDamage(int damage, Collision2D collision)
+    {
+        // 플레이어 피격
+        gameController.health -= damage;
+
+        // 플레이어 넉백
+        Vector2 knockback = (transform.position - collision.transform.position).normalized;
+        rigid.linearVelocity = Vector2.zero;
+        rigid.AddForce(knockback * 5.0f, ForceMode2D.Impulse);
+
+        // 플레이어 넉백시 움직임 제한
+        StartCoroutine(disableMove());
+    }
+
+    IEnumerator disableMove()
+    {
+        canMove = false;
+        yield return new WaitForSeconds(1.5f);
+        canMove = true;
     }
 
 }

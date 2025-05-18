@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class PlayerMove : MonoBehaviour
+public class Player : MonoBehaviour
 {
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
@@ -10,6 +10,12 @@ public class PlayerMove : MonoBehaviour
 
     private bool isGrounded;
     private bool canMove = true;
+    [SerializeField]
+    private float coolTime;
+    private float bulletTime;
+
+    public GameObject bulletPrefab;
+    public bool flip = false;
 
     private void Awake()
     {
@@ -38,10 +44,12 @@ public class PlayerMove : MonoBehaviour
             if (Input.GetAxisRaw("Horizontal") == 1)
             {
                 spriteRenderer.flipX = false;
+                flip = false;
             }
             else if (Input.GetAxisRaw("Horizontal") == -1)
             {
                 spriteRenderer.flipX = true;
+                flip = true;
             }
 
             // 플레이어의 좌우 애니메이션
@@ -53,24 +61,52 @@ public class PlayerMove : MonoBehaviour
             {
                 anim.SetBool("isRunning", false);
             }
+
+            if (bulletTime <= 0)
+            {
+                // 플레이어의 공격
+                if (Input.GetAxisRaw("Vertical") == -1)
+                {
+                    Instantiate(bulletPrefab, transform.position, transform.rotation);
+                }
+                bulletTime = coolTime;
+            }
+            bulletTime -= Time.deltaTime;
         }
     }
 
-    // 땅에 닿았는지 여부
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // 땅에 닿았을 때
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
             anim.SetBool("isJumping", false);
         }
+
+        // 적과의 충돌
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(20, collision);
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
+        // 땅에서 떨어졌을 때
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
             anim.SetBool("isJumping", true);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // 사과와의 충돌
+        if (collision.gameObject.CompareTag("Apple"))
+        {
+            gameController.AddAppleCount(1);
+            collision.gameObject.SetActive(false);
         }
     }
 
@@ -97,5 +133,4 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         canMove = true;
     }
-
 }

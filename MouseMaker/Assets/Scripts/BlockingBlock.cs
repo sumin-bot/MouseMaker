@@ -7,7 +7,6 @@ public class BlockingBlock : MonoBehaviour
     public void HitBlocking()
     {
         blockingHP--;
-        
     }
 
     private void Update()

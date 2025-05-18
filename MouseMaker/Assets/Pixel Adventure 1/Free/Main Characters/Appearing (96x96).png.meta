@@ -206,20 +206,20 @@ TextureImporter:
       name: Appearing (96x96)_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 78
-        width: 12
-        height: 12
+        x: 0
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 825866485dc8c7d40800000000000000
-      internalID: 5583492486709806376
+      spriteID: b27af10fca2681e45b4c02219685aeaa
+      internalID: -1202500989
       vertices: []
       indices: 
       edges: []
@@ -228,20 +228,20 @@ TextureImporter:
       name: Appearing (96x96)_1
       rect:
         serializedVersion: 2
-        x: 45
-        y: 89
-        width: 6
-        height: 7
+        x: 96
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da194584d9c68cb90800000000000000
-      internalID: -7221402579709423187
+      spriteID: 742a6d1198cfc784f9aba3185fbc77f3
+      internalID: 835628036
       vertices: []
       indices: 
       edges: []
@@ -250,20 +250,20 @@ TextureImporter:
       name: Appearing (96x96)_2
       rect:
         serializedVersion: 2
-        x: 78
-        y: 78
-        width: 12
-        height: 12
+        x: 192
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 309163fa807765450800000000000000
-      internalID: 6077175626366064899
+      spriteID: 623a00441447d8049ac5e77beac4192b
+      internalID: -182507028
       vertices: []
       indices: 
       edges: []
@@ -272,20 +272,20 @@ TextureImporter:
       name: Appearing (96x96)_3
       rect:
         serializedVersion: 2
-        x: 141
-        y: 83
-        width: 6
-        height: 7
+        x: 288
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 01371d1e1a2fe06e0800000000000000
-      internalID: -1869290018219920624
+      spriteID: 72750647cdff93f418095b484090d5c5
+      internalID: 362288694
       vertices: []
       indices: 
       edges: []
@@ -294,20 +294,20 @@ TextureImporter:
       name: Appearing (96x96)_4
       rect:
         serializedVersion: 2
-        x: 107
-        y: 73
-        width: 12
-        height: 12
+        x: 384
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 570e578d01ed9a000800000000000000
-      internalID: 47813434996547701
+      spriteID: 5e1c1f8137be2914794321ad7d311039
+      internalID: 2043663566
       vertices: []
       indices: 
       edges: []
@@ -316,20 +316,20 @@ TextureImporter:
       name: Appearing (96x96)_5
       rect:
         serializedVersion: 2
-        x: 169
-        y: 73
-        width: 12
-        height: 12
+        x: 480
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9ea2f0442dbdce2f0800000000000000
-      internalID: -942136525895816471
+      spriteID: 18e9e2fe75e78294ab9836ca82c2f8cc
+      internalID: 1379509280
       vertices: []
       indices: 
       edges: []
@@ -338,548 +338,20 @@ TextureImporter:
       name: Appearing (96x96)_6
       rect:
         serializedVersion: 2
-        x: 210
-        y: 64
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a797451730c7f3640800000000000000
-      internalID: 5061900860415834490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_7
-      rect:
-        serializedVersion: 2
-        x: 237
-        y: 74
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2e8b3acd87af1850800000000000000
-      internalID: 6349978227040816686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86713e36af7e1fe10800000000000000
-      internalID: 2229818353128773480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 45
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9ed5728159af5d1a0800000000000000
-      internalID: -6785241745301479959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_10
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 45
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ccf37d5798cd0ab0800000000000000
-      internalID: -5040151855524217658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_11
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 45
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b147f7d810ad0c0a0800000000000000
-      internalID: -6863246131908873189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_12
-      rect:
-        serializedVersion: 2
-        x: 179
-        y: 45
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7d12be7a4f6d6d70800000000000000
-      internalID: 9038002392946318719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_13
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 45
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0cf25b01f27c4390800000000000000
-      internalID: -7832759272301462514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_14
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 45
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58d21a1383c2a4220800000000000000
-      internalID: 2470835965428575621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_15
-      rect:
-        serializedVersion: 2
-        x: 315
-        y: 28
-        width: 23
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5173f7ada8f6a670800000000000000
-      internalID: 8549794367340245339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_16
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 48
-        width: 18
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2d0af031f9d98060800000000000000
-      internalID: 6956330729382481198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_17
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7861041749497be50800000000000000
-      internalID: 6825087125579372167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_18
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 32
-        width: 21
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ab8a0886c5a1ff10800000000000000
-      internalID: 2301803156667534241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_19
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 39
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 640c0340f08d42650800000000000000
-      internalID: 6207323745429798982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_20
-      rect:
-        serializedVersion: 2
-        x: 516
-        y: 31
-        width: 25
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14bc577abd572e880800000000000000
-      internalID: -8583168353546941631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_21
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 31
-        width: 25
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c7d2430b6a000180800000000000000
-      internalID: -9151302988084357179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_22
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 6
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c69971fd197765150800000000000000
-      internalID: 5861003433466108268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_23
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 6
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cfeb2087a969a6040800000000000000
-      internalID: 4641687956141293308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_24
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 11
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 201d264326139b1b0800000000000000
-      internalID: -5640422760449388286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_25
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 11
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c9a9a3c7663f6a80800000000000000
-      internalID: -8471492554768406073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_26
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 18
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8aee1f9380dedd060800000000000000
-      internalID: 6979995617081814696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_27
-      rect:
-        serializedVersion: 2
-        x: 237
-        y: 13
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0f3e2757a022eab0800000000000000
-      internalID: -4980382334824071411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_28
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 18
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ed0305260a8433f0800000000000000
-      internalID: -921960264708715038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_29
-      rect:
-        serializedVersion: 2
-        x: 45
+        x: 576
         y: 0
-        width: 6
-        height: 8
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b5749b543c1eca1b0800000000000000
-      internalID: -5643888004197431461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Appearing (96x96)_30
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 5
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c56ac7a036825c970800000000000000
-      internalID: 8774463854844094044
+      spriteID: 8c946f518bc7af34d92866f25a119d20
+      internalID: 370455628
       vertices: []
       indices: 
       edges: []
@@ -888,7 +360,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c2a4ab91be6e8b442a62be46827972bb
     internalID: 0
     vertices: []
     indices: 
@@ -897,7 +369,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Appearing (96x96)_0: -1202500989
+      Appearing (96x96)_1: 835628036
+      Appearing (96x96)_2: -182507028
+      Appearing (96x96)_3: 362288694
+      Appearing (96x96)_4: 2043663566
+      Appearing (96x96)_5: 1379509280
+      Appearing (96x96)_6: 370455628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

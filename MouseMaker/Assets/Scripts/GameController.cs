@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
         appleText.text = $"Apple X {appleCount}";
     }
 
-    private void Update()
+    public void ChangeHealthUI()
     {
         healthText.text = $"HP : {health}";
     }

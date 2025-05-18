@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
         gameController = FindObjectOfType<GameController>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (canMove)
         {
@@ -79,6 +79,9 @@ public class PlayerMove : MonoBehaviour
         // 플레이어 피격
         gameController.health -= damage;
 
+        // 플레이어 HP UI 변경
+        gameController.ChangeHealthUI();
+
         // 플레이어 넉백
         Vector2 knockback = (transform.position - collision.transform.position).normalized;
         rigid.linearVelocity = Vector2.zero;
@@ -91,7 +94,7 @@ public class PlayerMove : MonoBehaviour
     IEnumerator disableMove()
     {
         canMove = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
         canMove = true;
     }
 

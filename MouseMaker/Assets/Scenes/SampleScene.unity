@@ -1380,7 +1380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4723107735738678597, guid: 9faba921d9468284abc101000ef79038, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: 0ea83f4c33ab1944d8cd72ab3e70fbb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2125,6 +2125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f08aec3a191da419b9a5a6b18fb536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 2042244638}
   coolTime: 0.3
   bulletPrefab: {fileID: 705933301779586524, guid: 6a54ba2432be97946af14ee9346f3223, type: 3}
   flip: 0
@@ -10540,6 +10541,10 @@ PrefabInstance:
     - target: {fileID: 1643550759208136327, guid: 02e25f5b3af549d449211668f83c8be4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910337347886272258, guid: 02e25f5b3af549d449211668f83c8be4, type: 3}
+      propertyPath: blockingHP
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3309792053121082783, guid: 02e25f5b3af549d449211668f83c8be4, type: 3}
       propertyPath: m_Color.a

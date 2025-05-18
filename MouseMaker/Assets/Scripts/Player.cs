@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
-    GameController gameController;
+    public GameController gameController;
 
     private bool isGrounded;
     private bool canMove = true;
@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        gameController = FindObjectOfType<GameController>();
     }
 
     private void FixedUpdate()

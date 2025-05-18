@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class BlockingBlock : MonoBehaviour
 {
-    public int blockingHP = 5;
+    [SerializeField]
+    private int blockingHP = 5;
 
     public void HitBlocking()
     {

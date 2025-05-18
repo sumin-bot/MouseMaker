@@ -4,6 +4,7 @@ using TMPro;
 
 public class GameController : MonoBehaviour
 {
+
     public int health;
 
     public int appleCount = 0;

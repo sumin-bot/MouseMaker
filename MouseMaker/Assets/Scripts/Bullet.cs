@@ -3,13 +3,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     Player player;
-    BlockingBlock blockingBlock;
+
 
     private bool flip;
-    private void Awake()
+    private void Start()
     {
         player = FindObjectOfType<Player>();
-        blockingBlock = FindObjectOfType<BlockingBlock>();
         flip = player.flip;
         Invoke("DestroyBullet", 2);
     }
@@ -30,8 +29,9 @@ public class Bullet : MonoBehaviour
         // 진로 방해 블럭과 만났을 때
         if (collision.gameObject.CompareTag("Blocking"))
         {
-            blockingBlock.HitBlocking();
-            DestroyBullet();
+            BlockingBlock block = collision.GetComponent<BlockingBlock>();
+            block.HitBlocking();
+            Destroy(gameObject);
         }
     }
 

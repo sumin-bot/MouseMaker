@@ -23,5 +23,13 @@ public class GameManager : MonoBehaviour
         healthText.text = $"HP : {player.health}";
     }
 
-    
+    private void Update()
+    {
+        if (player.health == 0)
+        {
+            SceneManager.LoadScene("GameResultScene");
+        }
+    }
+
+
 }

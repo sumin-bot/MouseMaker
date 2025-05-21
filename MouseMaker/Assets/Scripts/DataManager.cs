@@ -1,0 +1,35 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
+
+public class DataManager : MonoBehaviour
+{
+    public Player player;
+    public GameManager gameManager;
+
+    public int health;
+    public int apple;
+
+    public static DataManager Instance;
+
+    private void Awake()
+    {
+        // ΩÃ±€≈Ê
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    public void SaveDataBeforeSceneChange()
+    {
+        health = player.health;
+        apple = gameManager.appleCount;
+    }
+}

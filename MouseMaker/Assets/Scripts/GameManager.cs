@@ -14,22 +14,33 @@ public class GameManager : MonoBehaviour
 
     public void AddAppleCount(int amount)
     {
+        // 사과 수 UI
         appleCount += amount;
         appleText.text = $"Apple X {appleCount}";
     }
 
     public void ChangeHealthUI()
     {
+        // HP UI
         healthText.text = $"HP : {player.health}";
     }
 
-    private void Update()
+    private void Start()
     {
-        if (player.health == 0)
+        if (DataManager.Instance != null)
         {
-            SceneManager.LoadScene("GameResultScene");
+            DataManager.Instance.gameManager = this;
         }
     }
 
+    private void Update()
+    { 
+        // 플레이어가 사망할 경우
+        if (player.health == 0)
+        {
+            DataManager.Instance.SaveDataBeforeSceneChange();
 
+            SceneManager.LoadScene("GameResultScene");
+        }
+    }
 }

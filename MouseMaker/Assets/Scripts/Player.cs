@@ -25,6 +25,14 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        if (DataManager.Instance != null)
+        {
+            DataManager.Instance.player = this;
+        }
+    }
+
     private void FixedUpdate()
     {
         if (canMove)

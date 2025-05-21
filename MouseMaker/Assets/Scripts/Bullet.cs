@@ -4,7 +4,6 @@ public class Bullet : MonoBehaviour
 {
     Player player;
 
-
     private bool flip;
     private void Start()
     {

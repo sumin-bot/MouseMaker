@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
-    public GameController gameController;
+    public GameManager gameManager;
 
     private bool isGrounded;
     private bool canMove = true;
@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     private float coolTime;
     private float bulletTime;
 
+    public int health = 100;
     public GameObject bulletPrefab;
     public bool flip = false;
 
@@ -31,12 +32,12 @@ public class Player : MonoBehaviour
             // 플레이어의 가로 이동
             float h = Input.GetAxisRaw("Horizontal");
 
-            rigid.linearVelocity = new Vector2(h * 5.0f, rigid.linearVelocityY);
+            rigid.linearVelocityX = h * 5.0f;
 
             // 플레이어의 점프
             if (Input.GetAxisRaw("Vertical") == 1 && isGrounded)
             {
-                rigid.linearVelocity = new Vector2(rigid.linearVelocityX, 7f);
+                rigid.linearVelocityY = 7.0f;
             }
 
             // 플레이어의 방향전환
@@ -104,7 +105,7 @@ public class Player : MonoBehaviour
         // 사과와의 충돌
         if (collision.gameObject.CompareTag("Apple"))
         {
-            gameController.AddAppleCount(1);
+            gameManager.AddAppleCount(1);
             collision.gameObject.SetActive(false);
         }
     }
@@ -112,10 +113,10 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage, Collision2D collision)
     {
         // 플레이어 피격
-        gameController.health -= damage;
+        health -= damage;
 
         // 플레이어 HP UI 변경
-        gameController.ChangeHealthUI();
+        gameManager.ChangeHealthUI();
 
         // 플레이어 넉백
         Vector2 knockback = (transform.position - collision.transform.position).normalized;

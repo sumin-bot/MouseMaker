@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
-public class GameController : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
 
-    public int health;
+    public Player player;
 
     public int appleCount = 0;
     public TextMeshProUGUI appleText;
@@ -19,6 +20,8 @@ public class GameController : MonoBehaviour
 
     public void ChangeHealthUI()
     {
-        healthText.text = $"HP : {health}";
+        healthText.text = $"HP : {player.health}";
     }
+
+    
 }

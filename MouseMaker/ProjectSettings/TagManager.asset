@@ -9,6 +9,7 @@ TagManager:
   - Apple
   - Platform
   - Blocking
+  - Jump
   layers:
   - Default
   - TransparentFX

@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
             // 플레이어의 점프
             if (Input.GetAxisRaw("Vertical") == 1 && isGrounded)
             {
-                rigid.linearVelocityY = 7.0f;
+                rigid.linearVelocityY = 5.0f;
             }
 
             // 플레이어의 방향전환
@@ -115,6 +115,12 @@ public class Player : MonoBehaviour
         {
             gameManager.AddAppleCount(1);
             collision.gameObject.SetActive(false);
+        }
+
+        // 점프 부스트와의 충돌
+        if (collision.gameObject.CompareTag("Jump"))
+        {
+            rigid.linearVelocityY = 10.0f;
         }
     }
 

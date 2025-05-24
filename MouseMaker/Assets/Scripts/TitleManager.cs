@@ -24,4 +24,9 @@ public class TitleManager : MonoBehaviour
     {
         gameExplainImage.gameObject.SetActive(false);
     }
+
+    public void GameQuit()
+    {
+        Application.Quit();
+    }
 }

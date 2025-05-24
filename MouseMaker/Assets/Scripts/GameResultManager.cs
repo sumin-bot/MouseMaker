@@ -53,4 +53,9 @@ public class GameResultManager : MonoBehaviour
         DataManager.Instance.SaveScoreBeforeSceneChange();
         SceneManager.LoadScene("MainGameScene");
     }
+
+    public void GameQuit()
+    {
+        Application.Quit();
+    }
 }

@@ -81,6 +81,12 @@ public class Player : MonoBehaviour
             }
             bulletTime -= Time.deltaTime;
         }
+
+        // 플레이어가 공허로 떨어졌을 때
+        if (transform.position.y <= -50)
+        {
+            health = 0;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -120,7 +126,13 @@ public class Player : MonoBehaviour
         // 점프 부스트와의 충돌
         if (collision.gameObject.CompareTag("Jump"))
         {
-            rigid.linearVelocityY = 10.0f;
+            rigid.linearVelocityY = 7.0f;
+        }
+
+        // 도착지점과의 충돌
+        if (collision.gameObject.CompareTag("Goal"))
+        {
+            gameManager.ArriveGoalPoint();
         }
     }
 

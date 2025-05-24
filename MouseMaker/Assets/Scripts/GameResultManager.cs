@@ -26,8 +26,8 @@ public class GameResultManager : MonoBehaviour
         }
 
         bestscore = dataManager.bestscore;
-        score = dataManager.apple * 1000 - dataManager.block * 100 + dataManager.health * 100;
-        gameResultText.text = $"Apple = {dataManager.apple} X 1000\nUseBlock = -{dataManager.block} X 100\nHealth = {dataManager.health} X 100\nGoal = 0";
+        score = dataManager.apple * 1000 - dataManager.block * 100 + dataManager.health * 100 + (dataManager.isGoal ? 10000 : 0);
+        gameResultText.text = $"Apple = {dataManager.apple} X 1000\nUseBlock = -{dataManager.block} X 100\nHealth = {dataManager.health} X 100\nGoal = {(dataManager.isGoal ? 10000 : 0)}";
         scoreText.text = $"Score : {score}";
 
         // 최고 점수 계산

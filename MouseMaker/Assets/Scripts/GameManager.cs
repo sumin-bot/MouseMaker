@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public int appleCount = 0;
     public int blockCount = 0;
+    public bool isGoal = false;
     public TextMeshProUGUI appleText;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI blockText;
@@ -120,5 +121,15 @@ public class GameManager : MonoBehaviour
 
             SceneManager.LoadScene("GameResultScene");
         }
+    }
+
+    // 플레이어가 도착지점에 도달할 경우
+    public void ArriveGoalPoint()
+    {
+        isGoal = true;
+
+        DataManager.Instance.SaveDataBeforeSceneChange();
+
+        SceneManager.LoadScene("GameResultScene");
     }
 }

@@ -113,8 +113,9 @@ public class GameManager : MonoBehaviour
         }
 
         // 플레이어가 사망할 경우
-        if (player.health == 0)
+        if (player.health <= 0)
         {
+            player.health = 0;
             DataManager.Instance.SaveDataBeforeSceneChange();
 
             SceneManager.LoadScene("GameResultScene");

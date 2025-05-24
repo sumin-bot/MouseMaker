@@ -7,10 +7,12 @@ public class DataManager : MonoBehaviour
 {
     public Player player;
     public GameManager gameManager;
+    public GameResultManager gameResultManager;
 
     public int health;
     public int apple;
     public int block;
+    public int bestscore;
 
     public static DataManager Instance;
 
@@ -33,5 +35,10 @@ public class DataManager : MonoBehaviour
         health = player.health;
         apple = gameManager.appleCount;
         block = gameManager.blockCount;
+    }
+
+    public void SaveScoreBeforeSceneChange()
+    {
+        bestscore = gameResultManager.bestscore;
     }
 }

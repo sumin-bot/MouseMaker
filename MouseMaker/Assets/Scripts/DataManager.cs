@@ -12,8 +12,9 @@ public class DataManager : MonoBehaviour
     public int health;
     public int apple;
     public int block;
+    public float time;
     public bool isGoal;
-    public int bestscore;
+    public float bestscore;
 
     public static DataManager Instance;
 
@@ -37,6 +38,7 @@ public class DataManager : MonoBehaviour
         apple = gameManager.appleCount;
         block = gameManager.blockCount;
         isGoal = gameManager.isGoal;
+        time = gameManager.limitTime;
     }
 
     public void SaveScoreBeforeSceneChange()

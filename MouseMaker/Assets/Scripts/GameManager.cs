@@ -11,10 +11,12 @@ public class GameManager : MonoBehaviour
 
     public int appleCount = 0;
     public int blockCount = 0;
+    public float limitTime = 300.0f;
     public bool isGoal = false;
     public TextMeshProUGUI appleText;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI blockText;
+    public TextMeshProUGUI TimeText;
     public GameObject blockPrefab;
     public GameObject jumpBoostPrefab;
     public GameObject settingUI;
@@ -81,7 +83,19 @@ public class GameManager : MonoBehaviour
     }
 
     private void Update()
-    { 
+    {
+        // 제한 시간
+        limitTime -= Time.deltaTime;
+        TimeText.text = $"{System.Math.Truncate(limitTime / 60)} : {Mathf.Round(limitTime % 60)}";
+
+        if (limitTime <= 0)
+        {
+            player.health = 0;
+            DataManager.Instance.SaveDataBeforeSceneChange();
+
+            SceneManager.LoadScene("GameResultScene");
+        }
+
         // 블럭 설치
         if (isBlock)
         {
@@ -140,6 +154,7 @@ public class GameManager : MonoBehaviour
         if (player.health <= 0)
         {
             player.health = 0;
+            limitTime = 0;
             DataManager.Instance.SaveDataBeforeSceneChange();
 
             SceneManager.LoadScene("GameResultScene");

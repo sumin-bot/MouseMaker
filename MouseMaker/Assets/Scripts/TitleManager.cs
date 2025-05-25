@@ -10,6 +10,14 @@ public class TitleManager : MonoBehaviour
         gameExplainImage.gameObject.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameExplainCancle();
+        }
+    }
+
     public void GameStart()
     {
         SceneManager.LoadScene("MainGameScene");
